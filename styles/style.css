@@ -22,18 +22,10 @@
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
+
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
+
 
   /* header logo */
 
@@ -119,9 +111,12 @@
   min-width: 784px;
 }
 
+  /* description text decoration*/
+
 .two-columns__paragraph {
   margin: 0;
   font-size: 24px;
+  font-weight: 34px;
   font-weight: normal;
 }
 
@@ -129,8 +124,6 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-  /* description text decoration*/
 
 .two-columns__brief {
   margin: 0;
@@ -192,10 +185,11 @@
   width: 250px;
 }
 
-.table__cell_row {
+.table__cell-row {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  padding: 0;
 }
 
   /*table-cell text decoration*/
@@ -284,18 +278,9 @@
   color: #f2f2f2;
 }
 
-.section-title_theme_dark {
-  margin-top: 90px;
-}
-
 .table_theme_dark {
   margin-bottom: 90px;
 }
-
-.table__cell_theme_dark {
-  margin-top: 0px;
-}
-
 
   /*block kaufman cell position*/
 
@@ -303,20 +288,18 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-}
-
-.table__cell_row {
-  padding: 0;
-}
-
-.table__cell_theme_dark {
   list-style-type: none;
+  margin-top: 80px;
 }
 
+.table__cell-row_theme_dark {
+  margin: 0;
+}
 
   /*block kaufman text decoration*/
 
 .section-title_theme_dark{
+  margin-top: 90px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -402,17 +385,14 @@
 
 .footer__column_heading {
   margin: 0 auto 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer__column-links {
   list-style: none;
   padding: 0;
-}
-
-.footer__column_heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .footer__column-link {
